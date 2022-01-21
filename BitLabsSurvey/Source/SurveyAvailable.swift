@@ -34,15 +34,15 @@ public struct SurveyAvailable: Codable {
     }
     
     public struct Error: Codable {
-        var details: Details?
+        public var details: Details?
         
         enum CodingKeys: String, CodingKey {
             case details = "details"
         }
         
-        struct Details: Codable {
-            var http: String?
-            var msg: String?
+        public struct Details: Codable {
+            public var http: String?
+            public var msg: String?
             
             enum CodingKeys: String, CodingKey {
                 case http = "http"
