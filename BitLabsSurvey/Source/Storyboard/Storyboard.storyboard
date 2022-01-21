@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Survey View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="SurveyViewController" id="Y6W-OH-hqX" customClass="SurveyViewController" customModule="BitLabsSurvey" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ba9-gB-0Cl">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                <color key="backgroundColor" systemColor="systemTealColor"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="W85-hc-KKi">
+                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AfM-QJ-h5v">
+                                        <rect key="frame" x="187.5" y="10" width="39" height="24"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                                        <color key="textColor" systemColor="systemBackgroundColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sLz-Ml-ttp">
+                                        <rect key="frame" x="360" y="0.0" width="46" height="44"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Close"/>
+                                        <connections>
+                                            <action selector="btnCloseTap" destination="Y6W-OH-hqX" eventType="touchUpInside" id="vLV-CO-Zex"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemTealColor"/>
+                                <constraints>
+                                    <constraint firstItem="sLz-Ml-ttp" firstAttribute="top" secondItem="W85-hc-KKi" secondAttribute="top" id="2KK-Oq-fGT"/>
+                                    <constraint firstAttribute="trailing" secondItem="sLz-Ml-ttp" secondAttribute="trailing" constant="8" id="C8v-vZ-dnh"/>
+                                    <constraint firstAttribute="bottom" secondItem="sLz-Ml-ttp" secondAttribute="bottom" id="VCv-Yy-VVZ"/>
+                                    <constraint firstItem="AfM-QJ-h5v" firstAttribute="centerX" secondItem="W85-hc-KKi" secondAttribute="centerX" id="gbT-0u-uAE"/>
+                                    <constraint firstItem="AfM-QJ-h5v" firstAttribute="centerY" secondItem="W85-hc-KKi" secondAttribute="centerY" id="qFU-5F-yUB"/>
+                                    <constraint firstAttribute="height" constant="44" id="sxs-eQ-qMP"/>
+                                </constraints>
+                            </view>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nbo-ZK-V55">
+                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="W85-hc-KKi" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="27K-BB-Vqg"/>
+                            <constraint firstItem="W85-hc-KKi" firstAttribute="top" secondItem="Ba9-gB-0Cl" secondAttribute="bottom" id="FJL-qX-zqm"/>
+                            <constraint firstItem="nbo-ZK-V55" firstAttribute="top" secondItem="W85-hc-KKi" secondAttribute="bottom" id="J59-oe-eoA"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="nbo-ZK-V55" secondAttribute="trailing" id="JdF-QV-Jig"/>
+                            <constraint firstItem="Ba9-gB-0Cl" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="PVQ-VU-O3k"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="Ba9-gB-0Cl" secondAttribute="trailing" id="RwA-NL-eTA"/>
+                            <constraint firstItem="nbo-ZK-V55" firstAttribute="leading" secondItem="5EZ-qb-Rvc" secondAttribute="leading" id="WsN-8O-Njx"/>
+                            <constraint firstItem="W85-hc-KKi" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="jta-Rr-JrG"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="W85-hc-KKi" secondAttribute="trailing" id="kKl-rr-7GB"/>
+                            <constraint firstAttribute="bottom" secondItem="nbo-ZK-V55" secondAttribute="bottom" id="n4i-C9-IAv"/>
+                            <constraint firstItem="Ba9-gB-0Cl" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" id="nhe-y5-1IY"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="webView" destination="nbo-ZK-V55" id="go4-Sf-RkA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="76.811594202898561" y="120.53571428571428"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemTealColor">
+            <color red="0.18823529411764706" green="0.69019607843137254" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

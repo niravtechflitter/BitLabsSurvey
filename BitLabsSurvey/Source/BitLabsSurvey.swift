@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import UIKit
 
 public class BitLabsSurvey {
     
@@ -20,5 +21,11 @@ public class BitLabsSurvey {
     public func checkForSurveys(completion: @escaping ((Result<SurveyAvailable>) -> Void)) {
         let networkManager = NetworkManager(apiKey: apiKey, uid: uid)
         networkManager.checkSurveyAvailable(completion: completion)
+    }
+    
+    public func showSurvey(viewController: UIViewController) {
+        let surveyVC = UIStoryboard(name: "Storyboard", bundle: nil).instantiateViewController(withIdentifier: SurveyViewController.identifier)
+        surveyVC.modalPresentationStyle = .fullScreen
+        viewController.present(surveyVC, animated: true, completion: nil)
     }
 }
