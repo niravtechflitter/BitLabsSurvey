@@ -19,6 +19,7 @@ class SurveyViewController: UIViewController {
         self.view.backgroundColor = .red
         
         webView = WKWebView(frame: view.frame)
+        self.view.addSubview(webView)
         loadRequest()
         
         
