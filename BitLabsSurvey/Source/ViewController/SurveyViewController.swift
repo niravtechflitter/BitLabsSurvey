@@ -11,10 +11,11 @@ import WebKit
 
 class SurveyViewController: UIViewController {
     
-    @IBOutlet weak var webView: WKWebView!
+    var webView: WKWebView!
     static let identifier = String(describing: SurveyViewController.self)
     override func viewDidLoad() {
         super.viewDidLoad()
+        webView = WKWebView(frame: view.frame)
         loadRequest()
     }
     
@@ -25,7 +26,7 @@ class SurveyViewController: UIViewController {
         }
     }
     
-    @IBAction func btnCloseTap() {
+    func btnCloseTap() {
         self.dismiss(animated: true, completion: nil)
     }
 }

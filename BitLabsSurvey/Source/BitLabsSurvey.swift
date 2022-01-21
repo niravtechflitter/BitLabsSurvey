@@ -24,7 +24,7 @@ public class BitLabsSurvey {
     }
     
     public func showSurvey(viewController: UIViewController) {
-        let surveyVC = UIStoryboard(name: "Storyboard", bundle: nil).instantiateViewController(withIdentifier: SurveyViewController.identifier)
+        let surveyVC = SurveyViewController()
         surveyVC.modalPresentationStyle = .fullScreen
         viewController.present(surveyVC, animated: true, completion: nil)
     }

@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Survey View Controller-->
+        <!--View Controller-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
-                <viewController storyboardIdentifier="SurveyViewController" id="Y6W-OH-hqX" customClass="SurveyViewController" customModule="BitLabsSurvey" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SurveyViewController" id="Y6W-OH-hqX" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -34,9 +34,6 @@
                                         <rect key="frame" x="360" y="0.0" width="46" height="44"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal" title="Close"/>
-                                        <connections>
-                                            <action selector="btnCloseTap" destination="Y6W-OH-hqX" eventType="touchUpInside" id="vLV-CO-Zex"/>
-                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemTealColor"/>
@@ -74,9 +71,6 @@
                             <constraint firstItem="Ba9-gB-0Cl" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" id="nhe-y5-1IY"/>
                         </constraints>
                     </view>
-                    <connections>
-                        <outlet property="webView" destination="nbo-ZK-V55" id="go4-Sf-RkA"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

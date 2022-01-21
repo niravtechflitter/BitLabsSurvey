@@ -16,7 +16,7 @@
 		8B715171279A7D6100EDB627 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B71516D279A7D6100EDB627 /* Result.swift */; };
 		8B715172279A7D6100EDB627 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B71516E279A7D6100EDB627 /* NetworkManager.swift */; };
 		8B8ACD9E279AB535004A6258 /* SurveyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B8ACD9D279AB535004A6258 /* SurveyViewController.swift */; };
-		8B8ACDA1279AB5A2004A6258 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B8ACDA0279AB5A2004A6258 /* Storyboard.storyboard */; };
+		8B8ACDA4279ABDFA004A6258 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B8ACDA3279ABDFA004A6258 /* Storyboard.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,7 +40,7 @@
 		8B71516D279A7D6100EDB627 /* Result.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 		8B71516E279A7D6100EDB627 /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		8B8ACD9D279AB535004A6258 /* SurveyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyViewController.swift; sourceTree = "<group>"; };
-		8B8ACDA0279AB5A2004A6258 /* Storyboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
+		8B8ACDA3279ABDFA004A6258 /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +83,7 @@
 		8B715152279A7CD500EDB627 /* BitLabsSurvey */ = {
 			isa = PBXGroup;
 			children = (
+				8B8ACDA2279ABDFA004A6258 /* Resource */,
 				8B71516A279A7D2200EDB627 /* Source */,
 				8B715153279A7CD500EDB627 /* BitLabsSurvey.h */,
 				8B715154279A7CD500EDB627 /* BitLabsSurvey.docc */,
@@ -101,7 +102,6 @@
 		8B71516A279A7D2200EDB627 /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				8B8ACD9F279AB594004A6258 /* Storyboard */,
 				8B8ACD9C279AB503004A6258 /* ViewController */,
 				8B71516B279A7D6100EDB627 /* BitLabsSurvey.swift */,
 				8B71516E279A7D6100EDB627 /* NetworkManager.swift */,
@@ -119,12 +119,12 @@
 			path = ViewController;
 			sourceTree = "<group>";
 		};
-		8B8ACD9F279AB594004A6258 /* Storyboard */ = {
+		8B8ACDA2279ABDFA004A6258 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
-				8B8ACDA0279AB5A2004A6258 /* Storyboard.storyboard */,
+				8B8ACDA3279ABDFA004A6258 /* Storyboard.storyboard */,
 			);
-			path = Storyboard;
+			path = Resource;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -219,7 +219,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8B8ACDA1279AB5A2004A6258 /* Storyboard.storyboard in Resources */,
+				8B8ACDA4279ABDFA004A6258 /* Storyboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
