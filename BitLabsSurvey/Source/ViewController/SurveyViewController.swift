@@ -15,8 +15,13 @@ class SurveyViewController: UIViewController {
     static let identifier = String(describing: SurveyViewController.self)
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.view.backgroundColor = .red
+        
         webView = WKWebView(frame: view.frame)
         loadRequest()
+        
+        
     }
     
     private func loadRequest() {
