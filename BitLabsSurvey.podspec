@@ -11,6 +11,6 @@ Pod::Spec.new do |spec|
   spec.platform     = :ios, "12.0"
   #spec.source      = { :http => 'file:' + __dir__ + "/" }
   spec.source       = { :git => "https://github.com/niravtechflitter/BitLabsSurvey.git", :tag => "#{spec.version}" }
-  spec.source_files = "BitLabsSurvey/*/*.{h,swift}"
+  spec.source_files = "BitLabsSurvey/**/*.{h,swift}"
   spec.swift_version = "5.0"
 end
