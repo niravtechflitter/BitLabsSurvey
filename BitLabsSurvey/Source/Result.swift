@@ -16,7 +16,7 @@ public enum APIError {
     case invalidURL
     case serverError(Error?)
 
-    var localizedDescription: String? {
+    public var localizedDescription: String? {
         switch self {
         case .invalidURL:
             return "invalid URL"
